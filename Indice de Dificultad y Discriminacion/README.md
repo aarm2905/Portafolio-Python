@@ -6,7 +6,7 @@ El índice de discriminación y el índice de dificultad son dos métricas impor
 
 El índice de dificultad mide la proporción de estudiantes que respondieron correctamente a un ítem. Se calcula como:
 
-\[ \text{Índice de Dificultad} = \frac{\text{Número de respuestas correctas}}{\text{Número total de respuestas}} \]
+![alt text](image.png)
 
 Un valor más alto indica que el ítem es más fácil.
 
@@ -14,7 +14,7 @@ Un valor más alto indica que el ítem es más fácil.
 
 El índice de discriminación mide cuán bien un ítem diferencia entre estudiantes con alto rendimiento y bajo rendimiento. Una manera común de calcularlo es usando el método del punto biserial:
 
-\[ D = \frac{X_{\text{alto}} - X_{\text{bajo}}}{SD} \]
+![alt text](image-1.png)
 
 Donde:
 
