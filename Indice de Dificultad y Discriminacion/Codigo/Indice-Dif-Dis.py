@@ -26,19 +26,14 @@ for i in indices:
 #puntaje
 
 n = len(indices)
-
+alumnos["Total Score"] = alumnos["Total Score"].replace(",",".",regex = True).astype(float)
 order = alumnos.sort_values('Total Score',ascending=False)
 order = order.reset_index(drop=True)
 
 order=order.iloc[0:(len(order)-(order['Total Score'].isnull().sum())),:] # elimina a los alumnos que no dieron el examen 
 
-suma=[]
-for j in range(n):
-    valor = order.iloc[:,indices[j]].sum()
-    suma.append(valor)    
-    
-#print(suma)
 
+suma=[]
 for j in range(n):
     valor = order.iloc[:,indices[j]]
     valorNumero = valor.replace(',', '.',regex=True).astype(float).sum()
@@ -87,7 +82,8 @@ for j in range(n):
 
 pregunta=[]
 for i in indices:
-    valor='P' + ' ' + alumnos[nomcol[i]].name[0]+ alumnos[nomcol[i]].name[10]
+    valor='P' + ' ' + alumnos[nomcol[i]].name[0]+ alumnos[nomcol[i]].name[10]+alumnos[nomcol[i]].name[11]
+    valor = valor.replace(" ","")
     pregunta.append(valor)
 
 #pregunta
