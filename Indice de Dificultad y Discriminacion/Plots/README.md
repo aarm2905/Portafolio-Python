@@ -1,3 +1,3 @@
-#Grafico de Indice de Discriminacion y Disficultad
+#Grafico de Indice de Discriminacion y Dificultad
 
 ![alt text](image.png)
